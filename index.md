@@ -24,9 +24,9 @@ Syntax highlighted code block
 **Bold** and _Italic_ and `Code` text
 
 ```
-<img src="/emma.jpg" alt="emma watson" width="50%">
+<img src="/emma.jpg" alt="emma watson" width="25%">
 
-<p style="color:#ff0055;font-family:courier;font-size:160%;"> hello World </p>
+<p style="color:#ff0055;font-family:courier;font-size:160%;"> hello World this is HTML</p>
 
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
