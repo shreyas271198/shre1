@@ -6,9 +6,6 @@
 #header {
   display: none;
 }
-#title {
-    margin: 0 0 5px 0;
-}
 
 .wrapper {
   max-width:90%;
@@ -19,6 +16,9 @@ section {
   max-width:90%;
   margin: 5% 5%;
   margin-top: 10px;
+  #title {
+    margin: 0 0 5px 0;
+}
 }
 
 .credits {
