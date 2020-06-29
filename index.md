@@ -1,4 +1,4 @@
-## My Painting and Sketches
+## My Paintings and Sketches
 
 You can use the [editor on GitHub](https://github.com/shreyas271198/shre1.github.io/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
 
