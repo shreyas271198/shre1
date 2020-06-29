@@ -26,7 +26,7 @@ Syntax highlighted code block
 ```
 ![image](/emma.jpg)
 
-<p> hello World </p>
+<p style="color:#ff0055;font-family:courier;font-size:160%;"> hello World </p>
 
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
