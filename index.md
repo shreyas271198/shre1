@@ -24,7 +24,7 @@ Syntax highlighted code block
 **Bold** and _Italic_ and `Code` text
 
 ```
-<img src="/emma.jpg" alt="emma watson" width="25%">
+<img src="/emma.jpg" alt="emma watson" width="40%">
 
 <p style="color:#ff0055;font-family:courier;font-size:160%;"> hello World this is HTML</p>
 
