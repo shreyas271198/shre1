@@ -22,6 +22,7 @@ function openCity(evt, cityName) {
     tablist[i].classList.remove("active");
   }
   evt.currentTarget.className += " active";
+  document.getElementById("expandedImg").parentElement.style.display = "none";
   document.getElementById(cityName).style.display = "block";
 
 }
