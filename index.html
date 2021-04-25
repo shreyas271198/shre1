@@ -1,12 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
+<title>Shreyas Chaudhari</title>
+<link rel="stylesheet" href="style.css">
+<link href='https://fonts.googleapis.com/css?family=Beth Ellen' rel='stylesheet'> 
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  * {box-sizing: border-box;}
+body {
+  margin: 0;
+  background: #302626;
+  font-family: Arial, Helvetica, sans-serif;
+}
+</style>
+</head>
 <body>
 
-<form action="welcome_get.php" method="get">
-Name: <input type="text" name="name"><br>
-E-mail: <input type="text" name="email"><br>
-<input type="submit">
-</form>
+
+<div class="header">
+  <b>Some Nice stuff</b>
+  <div class="header-right" id="had">
+    <a class="active" id="defaultOpen" onclick="openCity(event, 'Drawings')">Drawings</a>
+    <a onclick="openCity(event, 'Crafts')">Crafts</a>
+    <a onclick="openCity(event, 'inClass')">inClass</a>
+    <a onclick="openCity(event, 'Tech')">Tech.</a>
+  </div>
+</div>
+
+<div class="maincontent">
+  <div class="tabcontent" id="Drawings">
+    <p><center style="color: white"> Keep your hoOObizzzz alLLive, things that you llLLove to do</center></p>  
+    <div class="rowu">
+      <img src="images/10.jpg" width=10% onclick="myFunction(this);">
+      <img src="images/7.jpg" width=8% onclick="myFunction(this);">
+      <img src="images/3.jpg" width=10% onclick="myFunction(this);">
+      <img src="images/9.jpg" width=8% onclick="myFunction(this);">
+      <img src="images/1.jpg" width=5% onclick="myFunction(this);">
+      <img src="images/4.jpg" width=10% onclick="myFunction(this);">
+      <img src="images/19.jpg" width=5% onclick="myFunction(this);">
+    </div>
+    <div class="rowb">
+      <img src="images/6.jpg" width=8% onclick="myFunction(this);">
+      <img src="images/2.jpg" width=15% onclick="myFunction(this);">
+      <img src="images/8.jpg" width=5% onclick="myFunction(this);">
+      <img src="images/20.jpg" width=5% onclick="myFunction(this);">
+      <img src="images/5.jpg" width=9% onclick="myFunction(this);">
+      <img src="images/11.jpg" width=5% onclick="myFunction(this);">
+    </div>
+  </div>
+
+  <div class="tabcontent" id="Crafts">
+    <p><center style="color: white"> Add more dimentions </center></p>  
+    <div class="rowu">
+      <img src="images/14.jpg" width=7% onclick="myFunction(this);">
+
+    </div>
+    <div class="rowb">
+      <img src="images/12.jpg" width=5% onclick="myFunction(this);">
+      
+    </div>
+  </div>
+
+  <div class="tabcontent" id="inClass">
+    <p><center style="color: white"> When class is sooooo booooring</center></p>  
+    <div class="rowu">
+      <img src="images/16.jpg" width=7% onclick="myFunction(this);">
+
+    </div>
+  </div>
+
+  <div class="tabcontent" id="Tech">
+    <p><center style="color: white">.-.. . - ...  / - .. -. -.- . .-.</center></p>  
+   <div class="rowu">
+    <video autoplay="false" preload="none" poster="videos/posters/1.jpg" style="object-fit:cover; width:300px; height:340px;" controls>
+    <source src="videos/1.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+    </video>
+    <video autoplay="false" preload="none" width="300" height="220" poster="videos/posters/2.jpg" style="object-fit:cover" controls>
+    <source src="videos/2.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+    </video>
+    <video autoplay="false" preload="none" width="360" height="280" poster="videos/posters/3.jpg" style="object-fit:cover" controls>
+    <source src="videos/3.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+    </video>
+   </div>
+   <div class="rowb">
+    <video autoplay="false" preload="none" width="360" height="240" poster="videos/posters/4.jpg" style="object-fit:cover" controls>
+    <source src="videos/4.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+    </video>
+    <video autoplay="false" preload="none" width="200" height="200" poster="videos/posters/5.jpg" style="object-fit:cover" controls>
+    <source src="videos/5.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+    </video>
+   </div>
+  </div>
+</div>
+
+<div class="container">
+  <img id="expandedImg">
+  <div id="imgtext"></div>
+</div>
+
+
+
+<script src="javascript.js"></script>
 
 </body>
 </html>
