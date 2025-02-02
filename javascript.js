@@ -1,30 +1,25 @@
-function myFunction(imgs) {
-  // Get the expanded image
-  var expandImg = document.getElementById("expandedImg");
-  // Get the image text
-  var imgText = document.getElementById("imgtext");
-  // Use the same src in the expanded image as the image being clicked on from the grid
-  var original = imgs.src.replace("images","bigimg");
-  expandImg.src = original;
-  // Use the value of the alt attribute of the clickable image as text inside the expanded image
-  imgText.innerHTML = imgs.alt;
-  // Show the container element (hidden with CSS)
-  expandImg.parentElement.style.display = "block";
-}
-function openCity(evt, cityName) {
-  var i, tabcontent, tablinks;
-  tabcontent = document.getElementsByClassName("tabcontent");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
-  }
-  tablist = document.getElementById("had").children;
-  for (i = 0; i < tablist.length; i++) {
-    tablist[i].classList.remove("active");
-  }
-  evt.currentTarget.className += " active";
-  document.getElementById("expandedImg").parentElement.style.display = "none";
-  document.getElementById(cityName).style.display = "block";
-
+function openImage(src) {
+    document.getElementById("fullImage").src = src;
 }
 
-document.getElementById("defaultOpen").click();
+function loadImages() {
+    const gallery = document.querySelector('.gallery');
+    const imageFolder = 'bigimg/';
+    const thumbFolder = 'images/';
+    const imageNumbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10,11,19,20,21,22,23,24,25,26]; // Array of image numbers
+
+    imageNumbers.forEach(number => {
+        const circle = document.createElement('div');
+        circle.className = 'circle';
+        circle.onclick = () => openImage(`${imageFolder}${number}.jpg`);
+
+        const img = document.createElement('img');
+        img.src = `${thumbFolder}${number}.jpg`;
+        img.alt = `Photo ${number}`;
+
+        circle.appendChild(img);
+        gallery.appendChild(circle);
+    });
+}
+
+window.onload = loadImages;
